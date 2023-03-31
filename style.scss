@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.container {
+  background-color: white;
+  height: 100vh;
+  display: grid;
+}
+.main {
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  border-radius: 15px;
+  background-color: aqua;
+  display: grid;
+  .scoreCard {
+    background: linear-gradient(
+      0deg,
+      hsl(241, 81%, 54%),
+      hsl(252, 100%, 67%) 120%
+    );
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    // align-content: center;
+    p {
+      font-weight: 500;
+      font-size: smaller;
+      color: gray;
+    }
+    h2 {
+      color: gray;
+    }
+    .scoreRound {
+      background: linear-gradient(
+        hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+      );
+      box-shadow: 2px 2px 60px hsla(241, 72%, 46%, 0);
+      border-radius: 100px;
+      height: 90px;
+      width: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        font-size: 50px;
+        color: white;
+      }
+    }
+  }
+  .summary {
+    padding: 10px;
+    #txt {
+      font-size: 20px;
+    }
+    #txt-1 {
+    }
+    #txt-2 {
+    }
+    #txt-3 {
+    }
+    #txt-4 {
+    }
+  }
+}
+@media (min-width: 500px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 500px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
