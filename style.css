@@ -14,53 +14,106 @@
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.2);
   margin: auto;
   border-radius: 15px;
-  background-color: aqua;
+  background-color: whitesmoke;
   display: grid;
 }
 .main .scoreCard {
   background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%) 120%);
+  height: 600px;
   padding: 10px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .main .scoreCard p {
-  font-weight: 500;
-  font-size: smaller;
-  color: gray;
+  font-weight: 100;
+  font-size: 17px;
+  padding: 20px;
+  color: whitesmoke;
 }
-.main .scoreCard h2 {
-  color: gray;
+.main .scoreCard h2,
+.main .scoreCard h1 {
+  color: whitesmoke;
 }
 .main .scoreCard .scoreRound {
   background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
   box-shadow: 2px 2px 60px hsla(241, 72%, 46%, 0);
   border-radius: 100px;
-  height: 90px;
-  width: 90px;
+  height: 120px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .main .scoreCard .scoreRound h3 {
+  margin-top: 20px;
   font-size: 50px;
   color: white;
 }
 .main .summary {
   padding: 10px;
+  font-size: large;
 }
 .main .summary #txt {
-  font-size: 20px;
+  font-size: 25px;
+  margin: 20px;
 }
-@media (min-width: 500px) {
+.main .summary #txt-1 {
+  margin: 20px;
+  background-color: rgb(252, 217, 227);
+  border-radius: 10px;
+  color: rgb(206, 59, 101);
+  padding: 25px;
+}
+.main .summary #txt-2 {
+  margin: 20px;
+  background-color: rgb(255, 255, 226);
+  border-radius: 10px;
+  color: rgb(255, 196, 18);
+  padding: 25px;
+}
+.main .summary #txt-3 {
+  padding: 25px;
+  margin: 20px;
+  background-color: rgb(232, 255, 198);
+  border-radius: 10px;
+  color: rgb(17, 255, 0);
+}
+.main .summary #txt-4 {
+  margin: 20px;
+  background-color: rgb(224, 200, 255);
+  color: hsl(234, 85%, 45%);
+  border-radius: 10px;
+  padding: 25px;
+}
+.main .summary button {
+  margin: 20px;
+  width: 93%;
+  font-size: medium;
+  padding: 20px;
+  border-radius: 100px;
+  border: none;
+  margin-top: 10px;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+.main .summary button:active {
+  background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%) 120%);
+}
+
+@media (min-width: 800px) {
   .main {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 500px) {
+@media (max-width: 799px) {
   .main {
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
